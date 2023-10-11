@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Logo from '../../assets/logo1.png';
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import { XMarkIcon } from '@heroicons/react/24/solid';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -45,7 +46,28 @@ const Navbar = () => {
                 <li className="py-6 text-4xl cursor-pointer">Contact</li>
             </ul>
             {/* Social Icons */}
-            <div className="hidden"></div>
+            <div className="hidden md:flex fixed flex-col top-[35%] left-0">
+                <ul>
+                    <li className="w-40 h-16 p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
+                        <a
+                            className="flex justify-between items-center text-gray-300 w-full"
+                            href="https://www.linkedin.com/in/christopher-s-lewis/"
+                            target="_blank"
+                        >
+                            LinkedIn <FaLinkedin size={30} />
+                        </a>
+                    </li>
+                    <li className="w-40 h-16 p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-900">
+                        <a
+                            className="flex justify-between items-center text-gray-300 w-full"
+                            href="https://github.com/ChristopherStephenLewis"
+                            target="_blank"
+                        >
+                            GitHub <FaGithub size={30} />
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     );
 };
