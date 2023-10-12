@@ -49,7 +49,7 @@ const Navbar = () => {
             {/* Social Icons */}
             <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
                 <ul>
-                    <li className="w-40 h-16 p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500 border border-gray-800 rounded-tr-lg hover:rounded-lg">
+                    <li className="w-40 h-16 p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500 border border-gray-700 rounded-tr-lg hover:rounded-lg">
                         <a
                             className="flex justify-between items-center text-gray-300 w-full"
                             href="https://www.linkedin.com/in/christopher-s-lewis/"
@@ -58,7 +58,7 @@ const Navbar = () => {
                             LinkedIn <FaLinkedin size={30} />
                         </a>
                     </li>
-                    <li className="w-40 h-16 p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-900 hover:rounded-lg">
+                    <li className="w-40 h-16 p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-900 border-gray-700 border hover:rounded-lg">
                         <a
                             className="flex justify-between items-center text-gray-300 w-full"
                             href="https://github.com/ChristopherStephenLewis"
@@ -67,7 +67,7 @@ const Navbar = () => {
                             GitHub <FaGithub size={30} />
                         </a>
                     </li>
-                    <li className="w-40 h-16 p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-800 border border-gray-800 rounded-br-lg hover:rounded-lg">
+                    <li className="w-40 h-16 p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-800 border border-gray-700 rounded-br-lg hover:rounded-lg">
                         <a
                             className="flex justify-between items-center text-gray-300 w-full"
                             href="/"
