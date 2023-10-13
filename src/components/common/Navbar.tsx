@@ -42,7 +42,7 @@ const Navbar = () => {
             >
                 <li className="py-6 text-4xl cursor-pointer">Home</li>
                 <li className="py-6 text-4xl cursor-pointer">About</li>
-                <li className="py-6 text-4xl cursor-pointer">Experience</li>
+                <li className="py-6 text-4xl cursor-pointer">Skills</li>
                 <li className="py-6 text-4xl cursor-pointer">Work</li>
                 <li className="py-6 text-4xl cursor-pointer">Contact</li>
             </ul>
