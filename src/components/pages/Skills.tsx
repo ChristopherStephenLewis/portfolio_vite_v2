@@ -9,7 +9,7 @@ import React from '../../assets/react.png';
 
 const Skills = () => {
     return (
-        <div className="bg-[#0a192f] text-gray-300 w-full h-auto sm:h-screen">
+        <div className="bg-[#0a192f] text-gray-300 w-full h-auto sm:h-screen" id="skills">
             {/* Container */}
             <div className="flex flex-col justify-center w-full h-full max-w-4xl p-4 mx-auto">
                 <div>

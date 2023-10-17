@@ -1,6 +1,9 @@
 const Contact = () => {
     return (
-        <div className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4">
+        <div
+            className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
+            id="contact"
+        >
             <form action="" className="flex flex-col w-full max-w-xl">
                 <div className="pb-8">
                     <p className="inline text-4xl font-bold text-gray-300 border-b-4 border-pink-600">

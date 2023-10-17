@@ -2,11 +2,11 @@ import { ArrowSmallRightIcon } from '@heroicons/react/20/solid';
 
 const Home = () => {
     return (
-        <div className="bg-[#0a192f] w-full h-screen">
+        <div className="bg-[#0a192f] w-full h-screen" id="home">
             {/* Container */}
             <div className="flex flex-col justify-center h-full max-w-4xl px-8 mx-auto">
                 <p className="text-lg text-pink-600 sm:text-xl">Hi, my name is</p>
-                <h1 className="text-4xl font-bold text-gray-200 sm:text-7xl">David Smith</h1>
+                <h1 className="my-3 text-4xl font-bold text-gray-200 sm:text-7xl">David Smith</h1>
                 <h2 className="text-3xl font-bold text-gray-400 sm:text-6xl">
                     I'm a Full Stack Developer.
                 </h2>

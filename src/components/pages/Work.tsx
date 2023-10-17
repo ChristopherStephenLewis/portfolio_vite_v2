@@ -3,7 +3,7 @@ import RealEstate from '../../assets/realestate.jpg';
 
 const Work = () => {
     return (
-        <div className="bg-[#0a192f] w-full md:h-screen text-gray-300">
+        <div className="bg-[#0a192f] w-full md:h-screen text-gray-300 scroll-mt-12" id="work">
             <div className="flex flex-col justify-center w-full h-full max-w-4xl p-4 mx-auto">
                 <div className="pb-8">
                     <p className="inline text-4xl font-bold border-b-4 border-pink-600">Work</p>

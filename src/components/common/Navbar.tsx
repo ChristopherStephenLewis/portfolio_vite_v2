@@ -12,17 +12,37 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed w-full h-16 flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+        <nav className="fixed w-full h-16 flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-10">
             <div>
                 <img src={Logo} alt="Logo Image" className="w-12" />
             </div>
             {/* menu */}
             <ul className="hidden sm:flex">
-                <li className="px-4 cursor-pointer hover:text-pink-600">Home</li>
-                <li className="px-4 cursor-pointer hover:text-pink-600">About</li>
-                <li className="px-4 cursor-pointer hover:text-pink-600">Experience</li>
-                <li className="px-4 cursor-pointer hover:text-pink-600">Work</li>
-                <li className="px-4 cursor-pointer hover:text-pink-600">Contact</li>
+                <li className="px-4">
+                    <a href="#home" className="hover:text-pink-600">
+                        Home
+                    </a>
+                </li>
+                <li className="px-4">
+                    <a href="#about" className="hover:text-pink-600">
+                        About
+                    </a>
+                </li>
+                <li className="px-4">
+                    <a href="#skills" className="hover:text-pink-600">
+                        Skills
+                    </a>
+                </li>
+                <li className="px-4">
+                    <a href="#work" className="hover:text-pink-600">
+                        Work
+                    </a>
+                </li>
+                <li className="px-4">
+                    <a href="#contact" className="hover:text-pink-600">
+                        Contact
+                    </a>
+                </li>
             </ul>
             {/* hamburger */}
             <div onClick={toggleState} className="z-10 sm:hidden">
@@ -40,11 +60,21 @@ const Navbar = () => {
                         : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
                 }
             >
-                <li className="py-6 text-4xl cursor-pointer">Home</li>
-                <li className="py-6 text-4xl cursor-pointer">About</li>
-                <li className="py-6 text-4xl cursor-pointer">Skills</li>
-                <li className="py-6 text-4xl cursor-pointer">Work</li>
-                <li className="py-6 text-4xl cursor-pointer">Contact</li>
+                <li onClick={toggleState} className="py-6 text-4xl cursor-pointer">
+                    <a href="#home">Home</a>
+                </li>
+                <li onClick={toggleState} className="py-6 text-4xl cursor-pointer">
+                    <a href="#about">About</a>
+                </li>
+                <li onClick={toggleState} className="py-6 text-4xl cursor-pointer">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li onClick={toggleState} className="py-6 text-4xl cursor-pointer">
+                    <a href="#work">Work</a>
+                </li>
+                <li onClick={toggleState} className="py-6 text-4xl cursor-pointer">
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
             {/* Social Icons */}
             <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
