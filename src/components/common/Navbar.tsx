@@ -25,11 +25,11 @@ const Navbar = () => {
                 <li className="px-4 cursor-pointer hover:text-pink-600">Contact</li>
             </ul>
             {/* hamburger */}
-            <div onClick={toggleState} className="sm:hidden z-10">
+            <div onClick={toggleState} className="z-10 sm:hidden">
                 {isNavbarOpen ? (
-                    <XMarkIcon className="h-6 w-6 text-gray-200" />
+                    <XMarkIcon className="w-6 h-6 text-gray-200" />
                 ) : (
-                    <Bars3Icon className="h-6 w-6 text-gray-200" />
+                    <Bars3Icon className="w-6 h-6 text-gray-200" />
                 )}
             </div>
             {/* Mobile menu */}
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <ul>
                     <li className="w-40 h-16 p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500 border border-gray-700 rounded-tr-lg hover:rounded-lg">
                         <a
-                            className="flex justify-between items-center text-gray-300 w-full"
+                            className="flex items-center justify-between w-full text-gray-300"
                             href="https://www.linkedin.com/in/christopher-s-lewis/"
                             target="_blank"
                         >
@@ -60,7 +60,7 @@ const Navbar = () => {
                     </li>
                     <li className="w-40 h-16 p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-900 border-gray-700 border hover:rounded-lg">
                         <a
-                            className="flex justify-between items-center text-gray-300 w-full"
+                            className="flex items-center justify-between w-full text-gray-300"
                             href="https://github.com/ChristopherStephenLewis"
                             target="_blank"
                         >
@@ -69,7 +69,7 @@ const Navbar = () => {
                     </li>
                     <li className="w-40 h-16 p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-800 border border-gray-700 rounded-br-lg hover:rounded-lg">
                         <a
-                            className="flex justify-between items-center text-gray-300 w-full"
+                            className="flex items-center justify-between w-full text-gray-300"
                             href="/"
                             target="_blank"
                         >
