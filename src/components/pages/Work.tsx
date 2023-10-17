@@ -7,7 +7,9 @@ const Work = () => {
             <div className="flex flex-col justify-center w-full h-full max-w-4xl p-4 mx-auto">
                 <div className="pb-8">
                     <p className="inline text-4xl font-bold border-b-4 border-pink-600">Work</p>
-                    <p className="py-4">Check out some of my recent work:</p>
+                    <p className="py-4 text-xl">
+                        Check out some of my <span className="text-[#00a0ea]">recent work</span>:
+                    </p>
                 </div>
                 {/* Container  */}
                 <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">

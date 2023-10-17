@@ -12,7 +12,10 @@ const About = () => {
                 </div>
                 <div className="grid w-full max-w-4xl gap-8 px-4 sm:grid-cols-2">
                     <div className="text-3xl font-bold sm:text-right sm:text-4xl">
-                        <p>Hi. I'm David, nice to meet you. Please take a look around.</p>
+                        <p>
+                            Hi. I'm David, <span className="text-[#00a0ea]">nice to meet you.</span>{' '}
+                            Please take a look around.
+                        </p>
                     </div>
                     <div>
                         <p>

@@ -14,7 +14,10 @@ const Skills = () => {
             <div className="flex flex-col justify-center w-full h-full max-w-4xl p-4 mx-auto">
                 <div>
                     <p className="inline text-4xl font-bold border-b-4 border-pink-600 ">Skills</p>
-                    <p className="py-4">These are the technologies I've worked with:</p>
+                    <p className="py-4 text-xl">
+                        These are the <span className="text-[#00a0ea]">technologies</span> I've
+                        worked with:
+                    </p>
                 </div>
                 <div className="grid w-full grid-cols-2 gap-4 py-8 text-center sm:grid-cols-4">
                     {/* Could use a function/loop to repeat less code */}
