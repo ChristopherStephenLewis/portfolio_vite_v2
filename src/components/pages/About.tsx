@@ -13,16 +13,26 @@ const About = () => {
                 <div className="grid w-full max-w-4xl gap-8 px-4 sm:grid-cols-2">
                     <div className="text-3xl font-bold sm:text-right sm:text-4xl">
                         <p>
-                            Hi. I'm David, <span className="text-[#00a0ea]">nice to meet you.</span>{' '}
-                            Please take a look around.
+                            Hi. I'm Christopher,
+                            <span className="text-[#00a0ea]"> nice to meet you.</span> Please take a
+                            look around.
                         </p>
                     </div>
                     <div>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe nemo
-                            vitae odio nam labore ipsam sapiente itaque, molestiae tenetur veritatis
-                            eius voluptate accusamus sed non? Doloribus laboriosam numquam voluptas
-                            amet?
+                            My programming journey started back in 2017 while working in an office
+                            environment. I knew there had to be a faster way to automate my work - I
+                            discovered VBA programming for Excel - and from there it's been a
+                            journey towards technology and software.
+                        </p>
+                    </div>
+                    <div></div>
+                    <div>
+                        <p>
+                            Since then I've worked at companies such as{' '}
+                            <span className="text-[#00a0ea]">BlackBerry</span> and
+                            <span className="text-[#00a0ea]">TD Bank</span>, and now I'm looking
+                            forward to new career opportunities. Maybe it'll be with you?
                         </p>
                     </div>
                 </div>

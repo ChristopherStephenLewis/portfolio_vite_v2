@@ -10,14 +10,16 @@ const Home = () => {
             {/* Container */}
             <div className="flex flex-col justify-center h-full max-w-4xl px-8 mx-auto">
                 <p className="text-lg text-pink-600 sm:text-xl">Hi, my name is</p>
-                <h1 className="my-3 text-4xl font-bold text-gray-200 sm:text-7xl">David Smith</h1>
+                <h1 className="my-3 text-4xl font-bold text-gray-200 sm:text-7xl">
+                    Christopher Lewis
+                </h1>
                 <h2 className="text-3xl font-bold text-[#00a0ea] sm:text-6xl">
                     I'm a Full Stack Developer.
                 </h2>
                 <p className="max-w-2xl py-4 text-gray-400">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi cumque
-                    assumenda odio mollitia architecto pariatur cum nobis id nostrum temporibus
-                    error eum similique ab harum ullam rerum, perferendis officiis?
+                    I'm a software engineer passionate about building software that can enhance the
+                    lives of others. Whether you're an individual, a small business owner, or part
+                    of a larger corporation, I'm here to bring your digital visions to life.
                 </p>
                 <div>
                     <button
