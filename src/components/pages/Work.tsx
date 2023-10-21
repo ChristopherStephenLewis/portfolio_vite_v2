@@ -1,5 +1,17 @@
 import WorkImg from '../../assets/workImg.jpeg';
 import RealEstate from '../../assets/realestate.jpg';
+import FaceRecog from '../../assets/face-recognition-project.png';
+
+const workData = [
+    {
+        img: FaceRecog,
+        title: 'Face Recognition Website',
+        demoLink: 'https://christopherstephenlewis.github.io/facerecognitionwebsite/',
+        codeLink: 'https://github.com/ChristopherStephenLewis/facerecognitionwebsite',
+    },
+    { img: RealEstate, title: 'React JS Application', demoLink: '/', codeLink: '/' },
+    { img: WorkImg, title: 'React JS Application', demoLink: '/', codeLink: '/' },
+];
 
 const Work = () => {
     return (
@@ -11,80 +23,32 @@ const Work = () => {
                         Check out some of my <span className="text-[#00a0ea]">recent work</span>:
                     </p>
                 </div>
-                {/* Container  */}
                 <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-                    {/* Could use a function/loop to repeat less code */}
-                    {/* Change the hover buttons for mobile layout */}
-                    {/* Grid Item  */}
-                    <article
-                        style={{ backgroundImage: `url(${WorkImg})` }}
-                        className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-                    >
-                        {/* Hover Effects */}
-                        <div className="opacity-0 group-hover:opacity-90">
-                            <span className="text-2xl font-bold tracking-wider text-white">
-                                React JS Application
-                            </span>
-                            <div className="pt-8 text-center">
-                                <a href="/" className="m-2">
-                                    <button className="px-4 py-3 text-lg font-bold text-center text-gray-700 duration-200 bg-white rounded-lg hover:scale-110">
-                                        Demo
-                                    </button>
-                                </a>
-                                <a href="/" className="m-2">
-                                    <button className="px-4 py-3 text-lg font-bold text-center text-gray-700 duration-200 bg-white rounded-lg hover:scale-110">
-                                        Code
-                                    </button>
-                                </a>
+                    {workData.map((work, index) => (
+                        <article
+                            key={index}
+                            style={{ backgroundImage: `url(${work.img})` }}
+                            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+                        >
+                            <div className="flex flex-col opacity-0 group-hover:opacity-90 ">
+                                <p className="text-2xl font-bold tracking-wider text-center text-white">
+                                    {work.title}
+                                </p>
+                                <div className="pt-8 text-center">
+                                    <a href={work.demoLink} className="m-2" target="_blank">
+                                        <button className="px-4 py-3 text-lg font-bold text-center text-gray-700 duration-200 bg-white rounded-lg hover:scale-110">
+                                            Demo
+                                        </button>
+                                    </a>
+                                    <a href={work.codeLink} className="m-2" target="_blank">
+                                        <button className="px-4 py-3 text-lg font-bold text-center text-gray-700 duration-200 bg-white rounded-lg hover:scale-110">
+                                            Code
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article
-                        style={{ backgroundImage: `url(${RealEstate})` }}
-                        className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-                    >
-                        {/* Hover Effects */}
-                        <div className="opacity-0 group-hover:opacity-90">
-                            <span className="text-2xl font-bold tracking-wider text-white">
-                                React JS Application
-                            </span>
-                            <div className="pt-8 text-center">
-                                <a href="/" className="m-2">
-                                    <button className="px-4 py-3 text-lg font-bold text-center text-gray-700 duration-200 bg-white rounded-lg hover:scale-110">
-                                        Demo
-                                    </button>
-                                </a>
-                                <a href="/" className="m-2">
-                                    <button className="px-4 py-3 text-lg font-bold text-center text-gray-700 duration-200 bg-white rounded-lg hover:scale-110">
-                                        Code
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article
-                        style={{ backgroundImage: `url(${WorkImg})` }}
-                        className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-                    >
-                        {/* Hover Effects */}
-                        <div className="opacity-0 group-hover:opacity-90">
-                            <span className="text-2xl font-bold tracking-wider text-white">
-                                React JS Application
-                            </span>
-                            <div className="pt-8 text-center">
-                                <a href="/" className="m-2">
-                                    <button className="px-4 py-3 text-lg font-bold text-center text-gray-700 duration-200 bg-white rounded-lg hover:scale-110">
-                                        Demo
-                                    </button>
-                                </a>
-                                <a href="/" className="m-2">
-                                    <button className="px-4 py-3 text-lg font-bold text-center text-gray-700 duration-200 bg-white rounded-lg hover:scale-110">
-                                        Code
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        </article>
+                    ))}
                 </div>
             </div>
         </div>
