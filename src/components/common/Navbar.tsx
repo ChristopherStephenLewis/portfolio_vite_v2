@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Logo from '../../assets/logo1.png';
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import Logo from '../../assets/logo-v3.svg';
 
 const Navbar = () => {
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
         <nav className="fixed w-full h-16 flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-10">
             <div>
-                <img src={Logo} alt="Logo Image" className="w-12" />
+                <img src={Logo} alt="Logo Image" className="w-16" />
             </div>
             {/* menu */}
             <ul className="hidden sm:flex">
