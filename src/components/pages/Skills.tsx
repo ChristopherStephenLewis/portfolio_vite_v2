@@ -7,56 +7,39 @@ import Postgres from '../../assets/postgres2.png';
 import Python from '../../assets/python.png';
 import React from '../../assets/react.png';
 
+const skillsData = [
+    { logo: Java, alt: 'Java Logo', name: 'Java' },
+    { logo: Javascript, alt: 'JavaScript Logo', name: 'JavaScript' },
+    { logo: Python, alt: 'Python Logo', name: 'Python' },
+    { logo: React, alt: 'React Logo', name: 'React' },
+    { logo: Node, alt: 'Node.js Logo', name: 'Node.js' },
+    { logo: Postgres, alt: 'PostgreSQL Logo', name: 'PostgreSQL' },
+    { logo: Mongo, alt: 'MongoDB Logo', name: 'MongoDB' },
+    { logo: Github, alt: 'GitHub Logo', name: 'GitHub' },
+];
+
 const Skills = () => {
     return (
         <div className="bg-[#0a192f] text-gray-300 w-full h-auto sm:h-screen" id="skills">
-            {/* Container */}
             <div className="flex flex-col justify-center w-full h-full max-w-4xl p-4 mx-auto">
                 <div>
-                    <p className="inline text-4xl font-bold border-b-4 border-pink-600 ">Skills</p>
+                    <p className="inline text-4xl font-bold border-b-4 border-pink-600">Skills</p>
                     <p className="py-4 text-xl">
                         Some <span className="text-[#00a0ea]">technologies</span> I've been recently
                         working with:
                     </p>
                 </div>
+                {/* Mapping the skillsData array into a grid */}
                 <div className="grid w-full grid-cols-2 gap-4 py-8 text-center sm:grid-cols-4">
-                    {/* Could use a function/loop to repeat less code */}
-                    <div className="duration-500 shadow-md shadow-gray-950 hover:scale-110">
-                        <img className="w-20 mx-auto mt-2" src={Java} alt="Java Logo" />
-                        <p className="my-4">Java</p>
-                    </div>
-                    <div className="duration-500 shadow-md shadow-gray-950 hover:scale-110">
-                        <img className="w-20 mx-auto mt-2" src={Javascript} alt="JavaScript Logo" />
-                        <p className="my-4">JavaScript</p>
-                    </div>
-                    <div className="duration-500 shadow-md shadow-gray-950 hover:scale-110">
-                        <img className="w-20 mx-auto mt-2" src={Python} alt="Python Logo" />
-                        <p className="my-4">Python</p>
-                    </div>
-                    <div className="duration-500 shadow-md shadow-gray-950 hover:scale-110">
-                        <img className="w-20 mx-auto mt-2" src={React} alt="React Logo" />
-                        <p className="my-4">React</p>
-                    </div>
-                    <div className="duration-500 shadow-md shadow-gray-950 hover:scale-110">
-                        <img className="w-20 mx-auto mt-2" src={Node} alt="Node.js Logo" />
-                        <p className="my-4">Node.js</p>
-                    </div>
-                    <div className="duration-500 shadow-md shadow-gray-950 hover:scale-110">
-                        <img
-                            className="w-20 h-20 mx-auto mt-2"
-                            src={Postgres}
-                            alt="PostgreSQL Logo"
-                        />
-                        <p className="my-4">PostgreSQL</p>
-                    </div>
-                    <div className="duration-500 shadow-md shadow-gray-950 hover:scale-110">
-                        <img className="w-20 mx-auto mt-2" src={Mongo} alt="Mongo Logo" />
-                        <p className="my-4">Mongo</p>
-                    </div>
-                    <div className="duration-500 shadow-md shadow-gray-950 hover:scale-110">
-                        <img className="w-20 mx-auto mt-2" src={Github} alt="GitHub Logo" />
-                        <p className="my-4">GitHub</p>
-                    </div>
+                    {skillsData.map((skill, index) => (
+                        <div
+                            key={index}
+                            className="duration-500 shadow-md shadow-gray-950 hover:scale-110"
+                        >
+                            <img className="w-20 mx-auto mt-2" src={skill.logo} alt={skill.alt} />
+                            <p className="my-4">{skill.name}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
