@@ -15,8 +15,8 @@ const Skills = () => {
                 <div>
                     <p className="inline text-4xl font-bold border-b-4 border-pink-600 ">Skills</p>
                     <p className="py-4 text-xl">
-                        These are the <span className="text-[#00a0ea]">technologies</span> I've
-                        worked with:
+                        Some <span className="text-[#00a0ea]">technologies</span> I've been recently
+                        working with:
                     </p>
                 </div>
                 <div className="grid w-full grid-cols-2 gap-4 py-8 text-center sm:grid-cols-4">
