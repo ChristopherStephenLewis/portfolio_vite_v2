@@ -23,4 +23,4 @@ My portfolio is split into 5 main sections:
 -   Work
 -   Contact
 
-### Link to the portfolio is: (WIP)
+### Link to the portfolio is: https://christopherlewis.io/

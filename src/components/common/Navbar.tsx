@@ -4,6 +4,7 @@ import { XMarkIcon } from '@heroicons/react/24/solid';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../../assets/logo-v3.svg';
+import Resume from '../../assets/files/Christopher_Lewis_Resume-10222023.pdf';
 
 const Navbar = () => {
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -100,7 +101,7 @@ const Navbar = () => {
                     <li className="w-40 h-16 p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-sky-800 border border-gray-700 rounded-br-lg hover:rounded-lg">
                         <a
                             className="flex items-center justify-between w-full text-gray-300"
-                            href="/"
+                            href={Resume}
                             target="_blank"
                         >
                             Resume <BsFillPersonLinesFill size={30} />
