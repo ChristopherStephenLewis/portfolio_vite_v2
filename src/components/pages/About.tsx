@@ -30,7 +30,7 @@ const About = () => {
                     <div>
                         <p>
                             Since then I've worked at companies such as{' '}
-                            <span className="text-[#00a0ea]">BlackBerry</span> and
+                            <span className="text-[#00a0ea]">BlackBerry</span> and{' '}
                             <span className="text-[#00a0ea]">TD Bank</span>, and now I'm looking
                             forward to new career opportunities. Maybe it'll be with you?
                         </p>
