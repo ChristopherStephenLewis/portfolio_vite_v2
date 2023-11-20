@@ -4,7 +4,7 @@ import { XMarkIcon } from "@heroicons/react/24/solid";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../../assets/logo-v3.svg";
-import Resume from "../../assets/files/Christopher_Lewis_Resume.pdf";
+import Resume from "../../assets/files/Christopher_Lewis_Resume_New.pdf";
 
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
