@@ -4,7 +4,7 @@ import { XMarkIcon } from "@heroicons/react/24/solid";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../../assets/logo-v3.svg";
-import Resume from "../../assets/files/Christopher_Lewis_Resume_New.pdf";
+import Resume from "../../assets/files/Christopher_Lewis_Resume.pdf";
 
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -15,7 +15,9 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full h-16 flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-10">
       <div>
-        <img src={Logo} alt="Logo Image" className="w-16" />
+        <a href="/">
+          <img src={Logo} alt="Logo Image" className="w-16" />
+        </a>
       </div>
       {/* menu */}
       <ul className="hidden sm:flex">
